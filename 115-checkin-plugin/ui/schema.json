@@ -1,0 +1,55 @@
+{
+  "views": [
+    {
+      "id": "main",
+      "title": "签到管理",
+      "sections": [
+        {
+          "type": "status",
+          "id": "status",
+          "title": "签到状态",
+          "fields": [
+            {"key": "today_signed", "label": "今日签到"},
+            {"key": "streak", "label": "连续签到天数"},
+            {"key": "total_days", "label": "总签到天数"},
+            {"key": "next_checkin", "label": "下次签到时间"}
+          ]
+        },
+        {
+          "type": "form",
+          "id": "config",
+          "title": "签到配置",
+          "fields": [
+            {
+              "key": "checkin_time",
+              "type": "text",
+              "label": "签到时间",
+              "placeholder": "HH:MM (如 09:30)",
+              "validate": {"pattern": "^([01]\\d|2[0-3]):[0-5]\\d$"}
+            },
+            {
+              "key": "notification_enabled",
+              "type": "switch",
+              "label": "启用签到通知"
+            },
+            {
+              "key": "stats_enabled",
+              "type": "switch",
+              "label": "启用每日统计"
+            }
+          ]
+        },
+        {
+          "type": "actions",
+          "id": "actions",
+          "title": "操作",
+          "buttons": [
+            {"id": "test_checkin", "label": "测试签到", "action": "test_checkin"},
+            {"id": "send_stats", "label": "发送统计", "action": "send_stats"},
+            {"id": "clear_history", "label": "清空记录", "action": "clear_history", "confirm": true}
+          ]
+        }
+      ]
+    }
+  ]
+}
