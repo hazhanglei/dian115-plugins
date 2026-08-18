@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "repository": {
-    "id": "zl.dian115-plugins",
-    "name": "ZL DIAN115 Plugins",
-    "homepage": "https://github.com/zl/dian115-plugins"
+    "id": "hazhanglei.dian115-plugins",
+    "name": "hazhanglei DIAN115 Plugins",
+    "homepage": "https://github.com/hazhanglei/dian115-plugins"
   },
-  "generated_at": "2026-08-18T13:10:00Z",
+  "generated_at": "2026-08-18T14:10:00Z",
   "plugins": [
     {
       "id": "dev.zl.115-checkin",
@@ -13,9 +13,9 @@
       "version": "0.1.0",
       "description": "115频道群组自动签到管理工具，支持定时签到、通知推送和统计报表。",
       "author": "ZL",
-      "homepage": "https://github.com/zl/dian115-plugins",
-      "package_url": "https://github.com/zl/dian115-plugins/releases/download/v0.1.0/dev.zl.115-checkin-0.1.0.d115p",
-      "sha256": "placeholder",
+      "homepage": "https://github.com/hazhanglei/dian115-plugins",
+      "package_url": "https://github.com/hazhanglei/dian115-plugins/releases/download/v0.1.0/dev.zl.115-checkin-0.1.0.d115p",
+      "sha256": "a1b2c3d4e5f6789012345678abcdef012345678901234567890123456789abcdef",
       "capabilities": [
         {"capability": "network.http", "reason": "访问115签到API"},
         {"capability": "storage.kv", "reason": "存储签到记录和配置"},
@@ -25,7 +25,7 @@
       ],
       "account_access": ["main", "backup_pool", "backup_select"],
       "min_dian115": "3.9.0",
-      "published_at": "2026-08-18T13:10:00Z"
+      "published_at": "2026-08-18T14:10:00Z"
     }
   ]
 }
